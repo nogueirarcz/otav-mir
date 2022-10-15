@@ -24,3 +24,19 @@ class Aluno(Pessoa):
     def estudar(self):
 
         print(f'{self.nome_classe} está estudando')
+
+
+class ClienteVip(Cliente):
+
+    # Sobrescrita de método construtor
+    def __init__(self, nome, idade, sobrenome):
+
+        super().__init__(nome, idade)
+        
+        self.sobrenome = sobrenome
+
+    # Sobrescrita de método
+    def falar(self):
+
+        super().falar()
+        print('* Falando *')
