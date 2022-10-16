@@ -1,6 +1,5 @@
 from conta_corrente import ContaCorrente
 from conta_poupanca import ContaPoupanca
-from conta_corrente import ContaCorrente
 
 
 conta1 = ContaPoupanca(13, 2211, 0)
